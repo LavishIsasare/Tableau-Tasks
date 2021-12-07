@@ -31,7 +31,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Data for Analysis - Candidate' name='excel-direct.0xqaf7818bv5e41e17slm1js86x1'>
-            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/Lavis/OneDrive/Desktop/DataSet for Tableau/Clootrack Task/Data for Analysis - Candidate.xlsx' interpretationMode='1' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/Lavis/OneDrive/Desktop/Data Science Projects/Analysis &amp; Visualizstion Task/Clootrack Task/Data for Tableau Developer - Task - Data Analysis - Clootrack Labs PVT. LTD. - Lavish Isasare.xlsx' interpretationMode='1' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0xqaf7818bv5e41e17slm1js86x1' name='Sheet1' table='[Sheet1$]' type='table'>
@@ -161,10 +161,9 @@
             <parent-name>[Sheet1]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
-            <approx-count>14</approx-count>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='integer' name='context'>4</attribute>
+              <attribute datatype='integer' name='context'>0</attribute>
               <attribute datatype='string' name='gridOrigin'>&quot;A1:BD264:no:A1:BD264:1&quot;</attribute>
               <attribute datatype='integer' name='lost'>0</attribute>
               <attribute datatype='integer' name='outcome'>1</attribute>
@@ -1288,6 +1287,17 @@
               <bucket>&quot;2.5&quot;</bucket>
             </map>
           </encoding>
+          <encoding attr='color' field='[none:Main Topic Sentiment:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Neutral&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Negative&quot;</bucket>
+            </map>
+          </encoding>
           <encoding attr='color' field='[none:Main Topic (copy)_2788854107681996800:nk]' type='palette'>
             <map to='#499894'>
               <bucket>&quot;price&quot;</bucket>
@@ -1330,17 +1340,6 @@
             </map>
             <map to='#ffbe7d'>
               <bucket>&quot;ease of use&quot;</bucket>
-            </map>
-          </encoding>
-          <encoding attr='color' field='[none:Main Topic Sentiment:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;Neutral&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;Positive&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;Negative&quot;</bucket>
             </map>
           </encoding>
         </style-rule>
@@ -1421,7 +1420,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Data for Analysis - Candidate' name='excel-direct.0ke31ei0up1vii1f7r8st0atrzxj'>
-            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/Lavis/OneDrive/Desktop/DataSet for Tableau/Clootrack Task/Data for Analysis - Candidate.xlsx' interpretationMode='1' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/Lavis/OneDrive/Desktop/Data Science Projects/Analysis &amp; Visualizstion Task/Clootrack Task/Data for Tableau Developer - Task - Data Analysis - Clootrack Labs PVT. LTD. - Lavish Isasare.xlsx' interpretationMode='1' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
@@ -1767,10 +1766,9 @@
             <parent-name>[Sheet1]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
-            <approx-count>14</approx-count>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='integer' name='context'>4</attribute>
+              <attribute datatype='integer' name='context'>0</attribute>
               <attribute datatype='string' name='gridOrigin'>&quot;A1:BD264:no:A1:BD264:1&quot;</attribute>
               <attribute datatype='integer' name='lost'>0</attribute>
               <attribute datatype='integer' name='outcome'>1</attribute>
@@ -8868,7 +8866,14 @@
                     <story-point captured-sheet='Sentiment (Pie)' id='3' />
                     <story-point captured-sheet='Main Topic Score By Aspect' id='4' />
                     <story-point captured-sheet='Score Distribution Among Sub-categories' id='5' />
-                    <story-point captured-sheet='Word Cloud' id='6' />
+                    <story-point captured-sheet='Word Cloud' id='6'>
+                      <capturedDeltas>
+                        <worksheet name='Word Cloud'>
+                          <filter column='[federated.0d23v3l095r63b104zcow140j6n4].[Tooltip (Main Topic Sentiment)]' delta-type='removed' />
+                          <filter column='[federated.0d23v3l095r63b104zcow140j6n4].[Tooltip (Main Topic Sentiment,Main Topic)]' delta-type='removed' />
+                        </worksheet>
+                      </capturedDeltas>
+                    </story-point>
                   </story-points>
                 </flipboard>
               </zone>
@@ -8901,7 +8906,7 @@
             <run fontalignment='0'>Æ&#10;&#10;</run>
           </formatted-text>
         </zone>
-        <zone flipboard-zone-id='5' forceUpdate='true' h='5379' hidden='true' id='12' story-point-id='3' type-v2='text' w='30839' x='2655' y='79473'>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='8452' hidden='true' id='12' story-point-id='3' type-v2='text' w='30839' x='2655' y='79473'>
           <formatted-text>
             <run fontalignment='0' fontcolor='#e15759'>there are word clouds which formed respect to the sentiment.</run>
           </formatted-text>
@@ -8940,7 +8945,7 @@
   <windows saved-dpi-scale-factor='1.25' source-height='63'>
     <window class='dashboard' maximized='true' name='Tableau Developer - Task - Data Analysis - Clootrack Labs PVT. LTD.'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{E2475600-6B44-46AF-9522-3BBE6A75B68F}' />
     </window>
     <window class='worksheet' name='Data Exploration'>
